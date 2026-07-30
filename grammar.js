@@ -23,7 +23,7 @@ export default grammar({
     obj_list: ($) => seq($.object, repeat(seq(",", $.object))),
     object: ($) => choice($.name, $.agent, $.number, $.list_cons),
     name_list: ($) => seq($.name, repeat(seq(",", $.name))),
-    active_pair: ($) => seq($.object, "~", $.object),
+    active_pair: ($) => seq($.object, choice("~", "<<"), $.object),
     aplist: ($) => seq($.active_pair, repeat(seq(",", $.active_pair))),
     rule_expression: ($) =>
       seq(
