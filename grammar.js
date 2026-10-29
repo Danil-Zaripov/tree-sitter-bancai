@@ -11,7 +11,7 @@ const binary_op = (prec_level, op, $) =>
   prec.left(prec_level, seq($.expression, op, $.expression));
 
 export default grammar({
-  name: "pinet",
+  name: "bancai",
 
   extras: ($) => [$.comment, /\s/],
   rules: {

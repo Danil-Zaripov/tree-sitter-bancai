@@ -2,13 +2,13 @@
   "$schema": "https://tree-sitter.github.io/tree-sitter/assets/schemas/config.schema.json",
   "grammars": [
     {
-      "name": "pinet",
-      "camelcase": "Pinet",
-      "title": "pinet",
-      "scope": "source.pinet",
+      "name": "bancai",
+      "camelcase": "Bancai",
+      "title": "bancai",
+      "scope": "source.bancai",
       "file-types": ["in"],
-      "injection-regex": "^pinet$",
-      "class-name": "TreeSitterPinet",
+      "injection-regex": "^bancai$",
+      "class-name": "TreeSitterBancai",
       "highlights": "queries/highlights.scm"
     }
   ],
@@ -24,7 +24,7 @@
       }
     ],
     "links": {
-      "repository": "https://github.com/Danil-Zaripov/pinet",
+      "repository": "https://github.com/Lamagraph/bancai",
       "funding": ""
     }
   },
